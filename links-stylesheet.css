@@ -8,7 +8,7 @@ p, li {
 
 /*The website background colour and custom cursor.*/
 body {
-  background-color: black;
+  background-color: rgb(37, 37, 37);
 }
 
 img{
@@ -35,8 +35,8 @@ img{
   justify-content: center;
   align-self: center;
   overflow: hidden;
-  background-color: grey;
-  border: 5px dashed whitesmoke;
+  background-color: rgb(111, 131, 111);
+  border: 5px solid lightskyblue;
 }
 
 #text-notice {
