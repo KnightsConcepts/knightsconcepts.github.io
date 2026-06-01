@@ -1,0 +1,180 @@
+/*border box makes sure there's a nice consistent border around your assets.*/
+* {
+    box-sizing: border-box;
+}
+
+/*.body-grid is the grid created to house your body elements.
+You have 12 columns of which to position content and can specify rows with
+grid-row: <number>/<number> to specify how long you want the content to be.*/
+.body-grid{
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 1%;
+}
+
+/*Header content contained in .banner.*/
+.banner{
+    background: red;
+    padding: 2%;
+    grid-column: col-start / span 12;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#kc-logo {
+    margin-right: 5%;
+}
+
+#kc-logo img {
+    width: 50%;
+}
+
+#website-title-text {
+    margin-left: 5%;
+
+}
+/*Header content contained in .banner.*/
+
+/*Site navigation layout contained in .navigation.*/
+.navigation{
+    background: rgb(115, 167, 187);
+    padding: 2%;
+    grid-column: col-start / span 12;
+}
+.desktop-nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.desktop-nav ul li {
+    background-color: aquamarine;
+    border-radius: 1.5em;
+    width: 10%;
+    height: 3em;
+    align-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.desktop-nav ul li:hover {
+    background-color: blanchedalmond;
+}
+/*Site navigation layout contained in .navigation.*/
+
+.mobile-nav {
+    display: none;
+}
+
+/*Main site content contained in .main-content.*/
+.main-content{
+    background: green;
+    padding:2%;
+    grid-column: col-start / span 12;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main, h2 p hr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+section h3 {
+    justify-self: center;
+}
+
+.portfolio-images img{
+    /*background: white;*/
+    width: 100%;
+    padding: 2% 0 2% 0;
+}
+/*Main site content contained in .main-content.*/
+
+/*Yeah this is the footer.*/
+.footer{
+    background: pink;
+    padding: 2%;
+    grid-column: col-start / span 12;
+}
+
+#rss-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#scroll-to-top-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    list-style: none;
+}
+
+/*mobile breakpoint*/
+@media (max-width: 800px) {
+    .banner {
+        grid-column: col-start / span 12;
+    }
+    #kc-logo {
+        margin-right: 0%;
+    }
+    #kc-logo img {
+        width: 40%;
+    }
+    #website-title-text {
+        margin-left: 0%;
+
+    }
+
+    .navigation {
+        grid-column: col-start / span 12;
+        grid-row: 2;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+    .mobile-nav ul {
+        list-style: none;
+    }
+
+    .main-content {
+        grid-column: col-start / span 12;
+        grid-row: 3/4;
+    }
+
+    .footer{
+        grid-column: col-start / span 12;
+    }
+}
+/*mobile breakpoint*/

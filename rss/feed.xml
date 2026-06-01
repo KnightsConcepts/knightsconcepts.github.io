@@ -1,0 +1,19 @@
+<rss xmlns:atom="knightsconcepts.com/2026/atom" version="2.0">
+<channel>
+    <atom:link href="knightsconcepts.com/rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <title>Knights Concepts RSS</title>
+    <link>https://knightsconcepts.com/</link>
+    <language>en</language>
+    <category>Art/Game art/Games</category>
+    <description>Notifications regarding site updates to the Knights Concepts website.</description>
+    <!--  below describes your rss items for people to view.  -->
+    <item>
+        <title>Hand coded new beginnings</title>
+        <link>https://knightsconcepts.com/</link>
+        <description>The start of the new RSS feed! As I've been expanding upon my web developmemt journey, this site has has a few iterations.
+        I appreciate everyone being patient with me whilst I work on everything. The site has moved around a lot in the past, though it should stay as it is now for a little while.
+        Aside from me making improvements and (of course) adding more of my work to it.</description>
+        <pubDate>Tues, 07 April 2025 16:48:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>
